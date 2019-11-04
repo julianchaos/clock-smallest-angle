@@ -6,6 +6,6 @@ app.use(require('./start/middleware'));
 app.use(require('./start/router'));
 
 const port = process.env.PORT | config.port;
-app.listen(process.env.PORT | config.port, () => {
+app.listen(port, () => {
 	console.log(`Listening on port ${port}`);
 });

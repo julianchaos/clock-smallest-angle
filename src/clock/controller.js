@@ -9,8 +9,6 @@ module.exports = (()=>{
 			res.status(200).json({angle: angle});
 		} catch(err) {
 			res.status(500).json({error: err.message});
-		} finally {
-			next();
 		}
 	}
 

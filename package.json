@@ -1,0 +1,15 @@
+{
+  "name": "clock-smallest-angle",
+  "version": "1.0.0",
+  "description": "An Express.js api which returns the smallest angle between two clock arrow",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julian Andrade <julian@ndrade.com.br>",
+  "license": "ISC"
+}

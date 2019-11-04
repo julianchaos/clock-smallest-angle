@@ -1,0 +1,19 @@
+version: '2.1'
+
+services:
+  redis:
+    image: redis
+    container_name: redis
+    expose:
+      - 6379
+
+  clock-smallest-angle:
+    build: .
+    volumes:
+      - ./:/usr/src/app
+    links:
+      - redis
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3030:3030

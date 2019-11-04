@@ -4,6 +4,7 @@
   "description": "An Express.js api which returns the smallest angle between two clock arrow",
   "main": "server.js",
   "dependencies": {
+    "bluebird": "^3.7.1",
     "config": "^3.2.4",
     "express": "^4.17.1",
     "redis": "^2.8.0"

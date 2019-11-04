@@ -1,5 +1,9 @@
 const redis = require('redis');
 const config = require('config');
+const bluebird = require('bluebird');
+
+bluebird.promisifyAll(redis.RedisClient.prototype);
+bluebird.promisifyAll(redis.Multi.prototype);
 
 class Cache {
 
@@ -15,7 +19,7 @@ class Cache {
 
     static get(key) {
         const client = Cache.createClient();
-        return client.get(key);
+        return client.getAsync(key);
     }
 }
 

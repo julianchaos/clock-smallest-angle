@@ -5,7 +5,7 @@ class Clock {
 
 		/**
 		 * Clock arrows angle function
-		 * (|11 * minute - 60 * minute|) / 2 = angle
+		 * (|11 * minute - 60 * hour|) / 2 = angle
 		 */
 		let angle = Math.abs(11 * minute - 60 * hour) / 2;
 
